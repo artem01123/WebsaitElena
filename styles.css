@@ -757,6 +757,11 @@ body{
 
 
 @media (max-width: 1000px) {
+	body{
+		width: 100%;
+		margin-top: 0;
+		background-color: #FFEECA;
+	}
 	/* Оформление секции с консультациями */
 	.consultations {
 		width: 80%; /* Ширина блока — 80% от ширины страницы */
