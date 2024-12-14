@@ -399,16 +399,16 @@ body{
 
 	.natal-chart {
 		position: absolute;
-		top: 830px; 
+		top: 833px; 
 		right: 10px; 
 		width: 300px;
-		height: 500px;
+		height: 480px;
 	
 	}
 	.nymerologia{
 		position: absolute;
-		top: 1685px; 
-		right: 100px;
+		top: 1485px; 
+		right: 10px;
 		width: 300px;
 		height: 425px;
 		
