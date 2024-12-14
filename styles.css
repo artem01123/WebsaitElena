@@ -790,7 +790,7 @@ body{
 	/* Стиль заголовка секции */
 	.section-title {
 		text-align: center; /* Текст заголовка выровнен по центру */
-		margin-bottom: 30px; /* Отступ снизу 30px */
+		margin-bottom: 25px; /* Отступ снизу 30px */
 		font-size: 1.875rem; /* Размер текста заголовка (2 единицы rem) */
 	}
 	.natalcard{
