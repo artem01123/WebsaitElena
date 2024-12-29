@@ -36,7 +36,7 @@ body{
 
 .natal-chart {
     position: absolute;
-    top: 1000px; /* Расстояние сверху, настройте по своему усмотрению */
+    top: 2%; /* Расстояние сверху, настройте по своему усмотрению */
     right: 100px; /* Расстояние справа, настройте по своему усмотрению */
     width: 300px;
     height: 500px;
@@ -44,7 +44,7 @@ body{
 }
 .nymerologia{
     position: absolute;
-    top: 1685px; /* Расстояние сверху, настройте по своему усмотрению */
+    top: 63%; /* Расстояние сверху, настройте по своему усмотрению */
     right: 100px; /* Расстояние справа, настройте по своему усмотрению */
     width: 300px;
     height: 425px;
@@ -400,15 +400,15 @@ body{
 
 	.natal-chart {
 		position: absolute;
-		top: 830px; 
-		right: 10px; 
+		top: 2%; 
+		right: 1px; 
 		width: 300px;
 		height: 480px;
 	
 	}
 	.nymerologia{
 		position: absolute;
-		top: 1420px; 
+		top: 80%; 
 		right: 10px;
 		width: 300px;
 		height: 385px;
