@@ -399,29 +399,7 @@ body{
 }
 
 @media (max-width: 1200px) {
-	/* Оформление секции с консультациями */
-	.consultations {
-		width: 80%; /* Ширина блока — 80% от ширины страницы */
-		margin: 0 auto; /* Центрирование блока на странице */
-		padding: 20px; /* Внутренние отступы (пространство внутри блока) */	
-	}
-
-	.natal-chart {
-		position: absolute;
-		top: 2%; 
-		right: 1px; 
-		width: 300px;
-		height: 480px;
 	
-	}
-	.nymerologia{
-		position: absolute;
-		top: 80%; 
-		right: 10px;
-		width: 300px;
-		height: 385px;
-		
-	}
 	
 	/* Стиль заголовка секции */
 	.section-title {
@@ -772,28 +750,7 @@ body{
 		background-color: #FFEECA;
 	}
 	/* Оформление секции с консультациями */
-	.consultations {
-		width: 80%; /* Ширина блока — 80% от ширины страницы */
-		margin: 0 auto; /* Центрирование блока на странице */
-		padding: 10px; /* Внутренние отступы (пространство внутри блока) */	
-	}
-
-	.natal-chart {
-		position: absolute;
-		top: 830px; 
-		right: 10px; 
-		width: 300px;
-		height: 500px;
-		display: none;
-	}
-	.nymerologia{
-		position: absolute;
-		top: 1685px; 
-		right: 100px;
-		width: 300px;
-		height: 425px;
-		display:none
-	}
+	
 	
 	/* Стиль заголовка секции */
 	.section-title {
