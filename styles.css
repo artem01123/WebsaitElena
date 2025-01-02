@@ -398,6 +398,8 @@ body{
 	display: none; /* Скрываем сам чекбокс, чтобы его не видели */
 }
 
+
+/* ноуты*/
 @media (max-width: 1200px) {
 	
 	
@@ -742,15 +744,27 @@ body{
 	}
 }
 
-
+/* телефы 1к*/
 @media (max-width: 1000px) {
-	body{
-		width: 100%;
-		margin-top: 0;
-		background-color: #FFEECA;
-	}
-	/* Оформление секции с консультациями */
 	
+	
+	/* Стиль заголовка секции */
+	.section-title {
+		text-align: center; /* Текст заголовка выровнен по центру */
+		margin-bottom: 30px; /* Отступ снизу 30px */
+		font-size: 1.875rem; /* Размер текста заголовка (2 единицы rem) */
+	}
+	/* Оформление заголовка карточки */
+	.consultation-title {
+		font-size: 1.375rem; /* Размер текста заголовка — 1.5 единицы rem */
+		margin-bottom: 10px; /* Отступ снизу для расстояния до следующего элемента */
+		text-transform: uppercase; /* Заглавные буквы для заголовка */
+		justify-content: center;
+		align-items: center;
+		text-align:center ;
+	}
+
+
 	.natal-chart {
 		display: none;
 		position: absolute;
@@ -768,24 +782,6 @@ body{
 		width: 300px;
 		height: 425px;
 		
-	
-	/* Стиль заголовка секции */
-	.section-title {
-		text-align: center; /* Текст заголовка выровнен по центру */
-		margin-bottom: 25px; /* Отступ снизу 30px */
-		font-size: 1.875rem; /* Размер текста заголовка (2 единицы rem) */
-	}
-	.natalcard{
-		rotate: 30;
-	}
-	/* Оформление заголовка карточки */
-	.consultation-title {
-		font-size: 1.375rem; /* Размер текста заголовка — 1.5 единицы rem */
-		margin-bottom: 10px; /* Отступ снизу для расстояния до следующего элемента */
-		text-transform: uppercase; /* Заглавные буквы для заголовка */
-		justify-content: center;
-		align-items: center;
-		text-align:center ;
 	}
 	/* Оформление одной карточки консультации */
 	.consultation-card {
@@ -811,14 +807,12 @@ body{
 		overflow: hidden; /* Лишний текст скрыт */
 		transition: max-height 0.5s ease-in-out; /* Плавное открытие блока за 0.5 секунды */
 		line-height: 1.6; /* Пространство между строками текста */
-		text-align: center; /* Выравнивание текста по ширине */
-		padding-left: 5px;
-		padding-right: 5px;
+		text-align: justify; /* Выравнивание текста по ширине */
+		padding-left: 75px;
+		padding-right: 75px;
 		font-size: 20px;
 		padding-bottom: 5px;
-		width:100%;
-		
-
+		width:550px;
 	}
 	/* Оформление кнопки "подробнее/скрыть" */
 	.B {
@@ -1111,3 +1105,5 @@ body{
 		display: none; /* Скрываем сам чекбокс, чтобы его не видели */
 	}
 }
+
+
