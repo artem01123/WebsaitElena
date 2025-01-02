@@ -26,6 +26,40 @@ body{
 .my_person{
 	font-size: 1.75rem;
 }
+
+.footer {
+	position: relative; /* Футер остаётся в общем потоке страницы */
+	background-color: #968b75;; /* Цвет фона футера */
+	padding: 20px;
+	height: 75px; /* Пример высоты футера */
+  }
+  
+  .social-icons {
+	position: absolute; /* Абсолютное позиционирование внутри футера */
+	bottom: 20px; /* Отступ от нижнего края футера */
+	right: 20px; /* Отступ от правого края футера */
+	display: flex;
+	flex-direction: row; /* Размещаем иконки вертикально */
+	gap: 10px; /* Расстояние между иконками */
+  }
+  
+  .icon {
+	width: 50px; /* Ширина иконки */
+	height: 50px; /* Высота иконки */
+	border-radius: 10px; /* Скруглённые углы, если нужно */
+	transition: transform 0.3s; /* Эффект при наведении */
+  }
+  
+  .icon:hover {
+	transform: scale(1.1); /* Увеличение при наведении */
+  }
+  
+.number{
+	position: absolute; /* Абсолютное позиционирование внутри футера */
+	bottom: 3px; /* Отступ от нижнего края футера */
+	right: 20px; /* Отступ от правого края футера */
+	display: flex;
+}
 /* Оформление секции с консультациями */
 .consultations {
 	position: relative;
