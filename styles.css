@@ -855,7 +855,7 @@ body{
 		max-height: 0; /* По умолчанию текст невидим, потому что высота блока — 0 */
 		overflow: hidden; /* Лишний текст скрыт */
 		transition: max-height 0.5s ease-in-out; /* Плавное открытие блока за 0.5 секунды */
-		line-height: 1.2; /* Пространство между строками текста */
+		line-height: 1.6; /* Пространство между строками текста */
 		text-align: left; /* Выравнивание текста по ширине */
 		padding-left: 5px;
 		padding-right: 5px;
