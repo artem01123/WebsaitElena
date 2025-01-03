@@ -26,7 +26,10 @@ body{
 .my_person{
 	font-size: 1.75rem;
 }
-
+.my_photo{
+	width: 215px;
+	height: 256px;
+}
 .footer {
 	position: relative; /* Футер остаётся в общем потоке страницы */
 	background-color: #968b75;; /* Цвет фона футера */
@@ -841,12 +844,12 @@ body{
 		overflow: hidden; /* Лишний текст скрыт */
 		transition: max-height 0.5s ease-in-out; /* Плавное открытие блока за 0.5 секунды */
 		line-height: 1.6; /* Пространство между строками текста */
-		text-align: justify; /* Выравнивание текста по ширине */
-		padding-left: 75px;
-		padding-right: 75px;
+		text-align: left; /* Выравнивание текста по ширине */
+		padding-left: 25px;
+		padding-right: 25px;
 		font-size: 20px;
 		padding-bottom: 5px;
-		width:550px;
+		width:250px;
 	}
 	/* Оформление кнопки "подробнее/скрыть" */
 	.B {
