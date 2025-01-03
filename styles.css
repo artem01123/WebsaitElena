@@ -8,7 +8,7 @@ body{
 }
 .my_info{
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	margin-top: 0;
 	text-align: center;
 	background: linear-gradient(240deg, #FFEECA, #FFDED1,#FFCBA2,#FFB4A2, #FFEECA  );
@@ -783,7 +783,19 @@ body{
 
 /* телефы 1к*/
 @media (max-width: 1000px) {
+	.consultations {
+		position: relative;
+		width: 90%; /* Ширина блока — 80% от ширины страницы */
+		margin: 30px; /* Центрирование блока на странице */
+		padding: 5px; /* Внутренние отступы (пространство внутри блока) */	
+	}
 	
+	.consultations2 {
+		position: relative;
+		width: 90%; /* Ширина блока — 80% от ширины страницы */
+		margin: 30px; /* Центрирование блока на странице */
+		padding: 5px; /* Внутренние отступы (пространство внутри блока) */	
+	}
 	
 	/* Стиль заголовка секции */
 	.section-title {
@@ -805,19 +817,19 @@ body{
 	.natal-chart {
 		display: none;
 		position: absolute;
-		top: 50px; /* Расстояние сверху, настройте по своему усмотрению */
+		top: 5px; /* Расстояние сверху, настройте по своему усмотрению */
 		right: 10px; /* Расстояние справа, настройте по своему усмотрению */
-		width: 300px;
-		height: 500px;
+		width: 3px;
+		height: 5px;
 	   
 	}
 	.nymerologia{
 		display: none;
 		position: absolute;
-		top: 160px; /* Расстояние сверху, настройте по своему усмотрению */
+		top: 1px; /* Расстояние сверху, настройте по своему усмотрению */
 		right: 10px; /* Расстояние справа, настройте по своему усмотрению */
-		width: 300px;
-		height: 425px;
+		width: 3px;
+		height: 4px;
 		
 	}
 	/* Оформление одной карточки консультации */
@@ -845,8 +857,8 @@ body{
 		transition: max-height 0.5s ease-in-out; /* Плавное открытие блока за 0.5 секунды */
 		line-height: 1.2; /* Пространство между строками текста */
 		text-align: left; /* Выравнивание текста по ширине */
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
 		font-size: 20px;
 		padding-bottom: 5px;
 		width:250px;
