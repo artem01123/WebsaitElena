@@ -864,6 +864,24 @@ body{
 
 /* телефы 1к*/
 @media (max-width: 1000px) {
+	.soc{
+		left:50px;
+		bottom: 50px;
+		width: 30px; /* Ширина иконки */
+		height: 30px; /* Высота иконки */
+		border-radius: 10px; /* Скруглённые углы, если нужно */
+		transition: transform 0.3s; /* Эффект при наведении */
+	}
+	.soc:hover {
+		transform: scale(1.1); /* Увеличение при наведении */
+	}
+	.trybka{
+		position: absolute;
+		margin-left: 5px;
+		margin-top: 43px;
+		width: 20px;
+		height: 20px;
+
 	.consultations {
 		position: relative;
 		width: 95%; /* Ширина блока — 80% от ширины страницы */
