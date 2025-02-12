@@ -22,6 +22,58 @@ body{
 	flex-direction: row; /* Размещаем иконки вертикально */
 	gap: 10px; /* Расстояние между иконками */
 }
+.container {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    transition: 0.3s;
+}
+/* Контейнер для кнопок (изначально спрятан под фото) */
+.button-box {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%) translateY(20px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease, bottom 0.5s ease, transform 0.5s ease;
+}
+
+/* Анимация при появлении */
+.active .button-box {
+    opacity: 1;
+    bottom: -100px;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+
+
+
+/* Стили для кнопок */
+.btn {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
 .soc{
 	left:50px;
 	bottom: 40px;
