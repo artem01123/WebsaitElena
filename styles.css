@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+}
 *{
 	margin:0
 }
@@ -14,6 +15,7 @@ body{
 	height: 100px;
 }
 
+
 .social_icons {
 	position: absolute; /* Абсолютное позиционирование внутри футера */
 	bottom: 20px; /* Отступ от нижнего края футера */
@@ -23,24 +25,28 @@ body{
 	gap: 10px; /* Расстояние между иконками */
 }
 .container {
+	width: 100%;
+	margin-right: 45%;;
     position: absolute;
     display: inline-block;
     cursor: pointer;
 }
 
 .image {
+	display: none;
     width: 50px;
     height: 50px;
     transition: 0.3s;
 }
 /* Контейнер для кнопок (изначально спрятан под фото) */
 .button-box {
+	z-index: 10;
     position: absolute;
     width: 200px;
     left: 50%;
-    bottom: -60px;
+    top:70px;
     transform: translateX(-50%) translateY(20px);
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     opacity: 0;
@@ -263,6 +269,10 @@ body{
 	font-size: 1rem; /* Размер текста чуть меньше основного заголовка */
 	margin-bottom: 10px; /* Отступ снизу для пространства до текста */
 	font-size: 26px;
+	transition: transform 0.3s;
+}
+.consultation-subtitle:hover {
+	transform: scale(1.01); /* Увеличение размера кнопки на 10% */
 }
 /* Скрытый блок с информацией */
 .A {
@@ -279,7 +289,7 @@ body{
 }
 /* Оформление кнопки "подробнее/скрыть" */
 .B {
-	color: #7c7c7c; /* Цвет текста кнопки — серый */
+	color: #020202; /* Цвет текста кнопки — серый */
 	text-decoration: underline; /* Подчёркнутый текст */
 	cursor: pointer; /* Курсор становится "рукой", когда наводишь на текст */
 	display: inline-block; /* Кнопка выглядит как обычный текст */
@@ -303,9 +313,10 @@ body{
 #toggle-info:checked ~ .consultation-details {
 	max-height: 1000px; /* Когда мы ставим галочку, текст разворачивается до 500px */
 }
+
 /* Когда наводим на кнопку, она темнеет */
 .toggle-label:hover {
-	color: #000; /* Меняем цвет текста на чёрный при наведении */
+	color: #cfa574; /* Меняем цвет текста на чёрный при наведении */
 }
 
 
@@ -916,6 +927,67 @@ body{
 
 /* телефы 1к*/
 @media (max-width: 1000px) {
+	.container {
+		height:300px;
+		width: 100%;
+		position:absolute;
+		display: inline-block;
+		cursor: pointer;
+	}
+	
+	.image {
+		z-index: 10;
+		display: flex;
+		position: absolute;
+		margin-top: 30px;
+		right: 47%;
+		width: 25px;
+		height: 25px;
+		transition: 0.3s;
+	}
+	/* Контейнер для кнопок (изначально спрятан под фото) */
+	.button-box {
+		display:flex;
+		
+		position: absolute;
+		width: 200px;
+		left: 50%;
+		top:70px;
+		transform: translateX(-50%) translateY(20px);
+		flex-direction: column;
+		gap: 10px;
+		opacity: 0;
+		
+		pointer-events: none;
+		transition: opacity 0.5s ease, bottom 0.5s ease, transform 0.5s ease;
+	}
+	
+	/* Анимация при появлении */
+	.active .button-box {
+		opacity: 1;
+		bottom: -60px;
+		transform: translateX(-50%) translateY(0);
+		pointer-events: auto;
+	}
+	
+	
+	
+	/* Стили для кнопок */
+	.btn {
+		font-size: 11px;
+		display: block;
+		padding: 10px;
+		background-color: #ddb662;
+		color: white;
+		text-decoration: none;
+		border-radius: 5px;
+		text-align: center;
+		transition: 0.3s;
+		height: 10px;
+	}
+	
+	
+	
 	.soc{
 		left:50px;
 		bottom: 50px;
@@ -938,9 +1010,11 @@ body{
 		position: absolute; /* Абсолютное позиционирование внутри футера */
 		bottom: 30px; /* Отступ от нижнего края футера */
 		left: 33px; /* Отступ от правого края футера */
+		font-size: 14px;
 		display: flex;
 	}
 	.scroll-button2 {
+		display: none;
 		position: absolute; /* Позволяет использовать top, left, right, bottom */
 		top: 45px; /* Расстояние от верхнего края окна */
 		right: 20%; /* Расстояние от левого края окна */
@@ -953,6 +1027,7 @@ body{
 		transition: transform 0.3s
 	  }
 	  .scroll-button {
+		display: none;
 		position: absolute; /* Позволяет использовать top, left, right, bottom */
 		top: 45px; /* Расстояние от верхнего края окна */
 		left: 30%; /* Расстояние от левого края окна */

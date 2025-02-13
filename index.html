@@ -17,8 +17,8 @@
 		<div class="container">
 			<img id="mainImage" src="mobile_menu.png" class="image" onclick="toggleMenu()">
 			<div class="button-box" id="buttonBox">
-				<a href="#consultations" class="btn">Перейти к фото 1</a>
-				<a href="#consultations2" class="btn">Перейти к фото 2</a>
+				<a href="#consultations" class="btn" >Ведическая Астрология</a>
+				<a href="#consultations2" class="btn">нумерология</a>
 			</div>
 		</div>
 		<div class = "butt_and_contact">
@@ -97,7 +97,7 @@
 					
 
 					<!-- Содержимое карточки -->
-					<div class="consultation-content">
+					<div class="consultation-content" onclick="toggleDetails(this)">
 						<!-- Чекбокс для раскрытия/скрытия текста -->
 						<input type="checkbox" id="toggle-info" />
 
@@ -107,7 +107,7 @@
 
 						<p class="consultation-subtitle">
 							   <!-- Подзаголовок карточки --><!-- Метка для текста "подробнее/скрыть", на которую можно нажать --> 
-							 <b class= "sub">Расчет Саде Сати</b> <label for="toggle-info" class="toggle-label B" id="toggle-icon">+</label>
+							 <label for="toggle-info" class= "sub B toggle-label"  id="toggle-icon" >Расчет Саде Сати+</label> 
 						</p>
 						
 
@@ -134,7 +134,7 @@
 					
 
 					<!-- Содержимое карточки -->
-					<div class="consultation-content">
+					<div class="consultation-content" onclick="toggleDetails(this)">
 						<!-- Чекбокс для раскрытия/скрытия текста -->
 						<input type="checkbox" id="toggle-infoA" />
 						
@@ -868,7 +868,7 @@
 	  
 	<script>
 		document.getElementById("toggle-icon").addEventListener("click", function() {
-			this.textContent = this.textContent === "+" ? "-" : "+";
+			this.textContent = this.textContent === "Расчет Саде Сати+" ? "Расчет Саде Сати-" : "Расчет Саде Сати+";
 		});
 		document.getElementById("toggle-iconA").addEventListener("click", function() {
 			this.textContent = this.textContent === "+" ? "-" : "+";
