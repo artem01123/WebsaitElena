@@ -583,7 +583,7 @@ body{
 
 
 /* ноуты*/
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 	.nymerologia{
 		position: absolute;
 		top: 180px; /* Расстояние сверху, настройте по своему усмотрению */
