@@ -70,7 +70,7 @@ body{
 .btn {
     display: block;
     padding: 10px;
-    background-color: #007bff;
+   
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -79,7 +79,7 @@ body{
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #caa864;
 }
 
 .soc{
@@ -978,7 +978,7 @@ body{
 	/* Анимация при появлении */
 	.active .button-box {
 		opacity: 1;
-		bottom: -60px;
+		bottom: -90px;
 		transform: translateX(-50%) translateY(0);
 		pointer-events: auto;
 	}
@@ -987,16 +987,16 @@ body{
 	
 	/* Стили для кнопок */
 	.btn {
-		font-size: 11px;
+		font-size: 16px;
 		display: block;
-		padding: 10px;
+		padding: 0px;
 		background-color: #ddb662;
 		color: rgb(0, 0, 0);
 		text-decoration: none;
 		border-radius: 5px;
 		text-align: center;
 		transition: 0.3s;
-		height: 10px;
+		height: 25px;
 	}
 	
 	
