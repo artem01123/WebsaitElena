@@ -1023,10 +1023,11 @@ body{
 	.number{
 		position: absolute; /* Абсолютное позиционирование внутри футера */
 		bottom: 30px; /* Отступ от нижнего края футера */
-		left: 33px; /* Отступ от правого края футера */
+		left: 10px; /* Отступ от правого края футера */
 		font-size: 17px;
 		display: flex;
 		font-weight: 800;
+		margin-top: 25px;
 	}
 	.scroll-button2 {
 		display: none;
